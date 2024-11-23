@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 
 interface Props extends HTMLAttributes<HTMLParagraphElement> {}
-export const Paragraph = ({ className = "", children, ...rest }: Props) => {
+export const Paragraph = ({ className = "", children }: Props) => {
   return (
     <motion.p
       initial={{

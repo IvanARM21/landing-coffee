@@ -48,37 +48,37 @@ export const Header = () => {
           >
             <a
               href="#servicios"
-              className="text-white hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Servicios
             </a>
             <a
               href="#menu"
-              className="text-white hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Menú
             </a>
             <a
               href="#testimonios"
-              className="text-white hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Testimonios
             </a>
             <a
               href="#galeria"
-              className="text-white hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Galería
             </a>
             <a
               href="#sobre-nosotros"
-              className="text-white hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Sobre nosotros
             </a>
             <a
               href="#contacto"
-              className="text-white hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Contacto
             </a>
@@ -118,53 +118,59 @@ export const Header = () => {
         <nav className=" flex flex-col justify-center items-center gap-8 p-5">
           <a
             href="#servicios"
-            className="text-white hover:text-primary-600 transition-colors duration-300 font-semibold text-xl sm:text-2xl"
+            className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 font-medium text-xl"
             onClick={() => setShowMenu(false)}
           >
             Servicios
           </a>
           <a
             href="#menu"
-            className="text-white hover:text-primary-600 transition-colors duration-300 font-semibold text-xl sm:text-2xl"
+            className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 font-medium text-xl"
             onClick={() => setShowMenu(false)}
           >
             Menú
           </a>
           <a
             href="#testimonios"
-            className="text-white hover:text-primary-600 transition-colors duration-300 font-semibold text-xl sm:text-2xl"
+            className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 font-medium text-xl"
             onClick={() => setShowMenu(false)}
           >
             Testimonios
           </a>
           <a
             href="#galeria"
-            className="text-white hover:text-primary-600 transition-colors duration-300 font-semibold text-xl sm:text-2xl"
+            className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 font-medium text-xl"
             onClick={() => setShowMenu(false)}
           >
             Galería
           </a>
           <a
             href="#sobre-nosotros"
-            className="text-white hover:text-primary-600 transition-colors duration-300 font-semibold text-xl sm:text-2xl"
+            className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 font-medium text-xl"
             onClick={() => setShowMenu(false)}
           >
             Sobre nosotros
           </a>
           <a
             href="#contacto"
-            className="text-white hover:text-primary-600 transition-colors duration-300 font-semibold text-xl sm:text-2xl"
+            className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 font-medium text-xl"
             onClick={() => setShowMenu(false)}
           >
             Contacto
           </a>
         </nav>
 
-        <div className="flex justify-center gap-10 p-5">
-          <a href="" className="text-zinc-300 text-xl font-semibold hover:">
+        <div className="flex justify-between gap-10 p-5 container">
+          <a
+            href=""
+            className="text-zinc-300 text-lg hover:text-primary-600 font-medium"
+          >
             Facebook
           </a>
-          <a href="" className="text-zinc-300 text-xl font-semibold hover:">
+          <a
+            href=""
+            className="text-zinc-300 text-lg hover:text-primary-600 font-medium"
+          >
             Instagram
           </a>
         </div>
