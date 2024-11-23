@@ -3,7 +3,7 @@ import { Hero } from "../components/Hero";
 import { Services } from "../components/Services";
 import Layout from "../layouts/Layout.astro";
 import Menu from "../components/Menu.astro";
-import Testiomonials from "../components/Testiomonials.astro";
+import { Testiomonials } from "../components/Testiomonials";
 import Gallery from "../components/Gallery.astro";
 import AboutUs from "../components/AboutUs.astro";
 import Contact from "../components/Contact.astro";
@@ -13,7 +13,7 @@ import Contact from "../components/Contact.astro";
   <Hero client:load />
   <Services client:visible />
   <Menu />
-  <Testiomonials />
+  <Testiomonials client:visible />
   <Gallery />
   <AboutUs />
   <Contact />

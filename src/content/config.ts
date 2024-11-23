@@ -14,4 +14,4 @@ const drink = defineCollection({
     })
 })
 
-export const collection = { drink };
+export const collections = { drink };
