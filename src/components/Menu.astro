@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import { Title } from "./ui/Title";
+import { Paragraph } from "./ui/Paragraph";
+import { formattCurrency } from "../utils";
+
+const allDrinks = await getCollection("drinks");
+---
+
+<section class="py-14 md:py-28" id="menu">
+  <div class="container">
+    <Title client:load>Nuestro Menú</Title>
+    <Paragraph client:load
+      >Explora nuestro menú y disfruta de una selección de bebidas deliciosas y
+      frescas. ¡Siempre algo para todos!</Paragraph
+    >
+
+    <ul class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 gap-y-20 gap-x-10">
+      {
+        allDrinks.map((drink) => (
+          <li class="flex flex-col gap-4 bg-primary-600/30 rounded-xl shadow-lg group transition duration-300">
+            <img
+              alt={""}
+              src={drink.data.image}
+              class="w-52 mx-auto aspect-square -mt-20 scale-110 group-hover:scale-125 group-hover:-translate-y-10 transition duration-300"
+            />
+
+            <div class="h-4 w-24 mx-auto bg-transparent rounded-full group-hover:bg-black/70 transition-all duration-300 blur-md group-hover:blur-lg " />
+
+            <div class="p-5 bg-white transition duration-300 h-full flex flex-col justify-between rounded-b-xl">
+              <h3 class="text-2xl font-semibold text-primary-700">
+                {drink.data.title}
+              </h3>
+              <div class="h-0.5 w-20 bg-primary-600 my-4" />
+              <p class="text-zinc-600 text-sm italic">
+                {drink.data.description}
+              </p>
+              <span class="text-3xl font-bold text-primary-600 text-right">
+                {formattCurrency(drink.data.price)}
+              </span>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

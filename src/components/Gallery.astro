@@ -1,0 +1,79 @@
+---
+import { Paragraph } from "./ui/Paragraph";
+import { Title } from "./ui/Title";
+---
+
+<section class="py-14 md:py-28" id="galeria">
+  <div class="container">
+    <Title client:load>Nuestra Galería</Title>
+    <Paragraph client:load
+      >Descubre nuestra selección de fotos que capturan la esencia de nuestro
+      café, el ambiente acogedor y la pasión que ponemos en cada taza</Paragraph
+    >
+
+    <div class="grid md:grid-cols-12 gap-10 mt-10">
+      <div class="md:col-span-7 overflow-hidden rounded-2xl shadow-md">
+        <img
+          src="/gallery/1.webp"
+          class="object-cover hover:scale-125 transition-all duration-500 h-full"
+          alt=""
+        />
+      </div>
+      <div class="md:col-span-5 overflow-hidden rounded-2xl shadow-md">
+        <img
+          src="/gallery/2.webp"
+          class="object-cover shadow-md hover:scale-125 transition-all duration-500 h-full"
+          alt=""
+        />
+      </div>
+
+      <div class="md:col-span-6 overflow-hidden rounded-2xl shadow-md">
+        <img
+          src="/gallery/3.webp"
+          class="object-cover shadow-md hover:scale-125 transition-all duration-500 h-full"
+          alt=""
+        />
+      </div>
+
+      <div class="md:col-span-6 overflow-hidden rounded-2xl shadow-md">
+        <img
+          src="/gallery/4.webp"
+          class="object-cover hover:scale-125 transition-all duration-500 h-full"
+          alt=""
+        />
+      </div>
+
+      <div class="md:col-span-5 overflow-hidden rounded-2xl shadow-md">
+        <img
+          src="/gallery/5.webp"
+          class="object-cover hover:scale-125 transition-all duration-500 h-full"
+          alt=""
+        />
+      </div>
+
+      <div class="md:col-span-7 overflow-hidden rounded-2xl shadow-md">
+        <img
+          src="/gallery/6.webp"
+          class="object-cover hover:scale-125 transition-all duration-500 h-full"
+          alt=""
+        />
+      </div>
+
+      <div class="md:col-span-7 overflow-hidden rounded-2xl shadow-md">
+        <img
+          src="/gallery/7.webp"
+          class="object-cover hover:scale-125 transition-all duration-500 h-full"
+          alt=""
+        />
+      </div>
+
+      <div class="md:col-span-5 overflow-hidden rounded-2xl shadow-md">
+        <img
+          src="/gallery/8.webp"
+          class="object-cover hover:scale-125 transition-all duration-500 h-full"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</section>

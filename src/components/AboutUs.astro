@@ -1,0 +1,46 @@
+---
+import { Paragraph } from "./ui/Paragraph";
+import { Title } from "./ui/Title";
+---
+
+<section class="py-14 md:py-28" id="sobre-nosotros">
+  <div class="container">
+    <Title client:load>Sobre Nosotros</Title>
+    <Paragraph client:load
+      >Conócenos un poco más. En Coffee Code nos apasiona ofrecerte un café de
+      calidad en un ambiente acogedor. Nos esforzamos por brindarte una
+      experiencia única en cada visita.
+    </Paragraph>
+
+    <div class="grid lg:grid-cols-2 mt-10 gap-10 lg:gap-20">
+      <div class="flex flex-col gap-8">
+        <div class="border-b-2 pb-8">
+          <h3 class="text-2xl font-heading text-primary-600">Nuestra Misión</h3>
+          <div class="h-0.5 w-20 bg-primary-500 my-4"></div>
+          <p class="text-zinc-500 text-xl">
+            Nuestra misión es ofrecer a cada cliente una experiencia excepcional
+            a través de cafés de alta calidad, un ambiente acogedor y un
+            servicio cercano, creando momentos únicos que inspiren y conecten.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-heading text-primary-600">Nuestra Visión</h3>
+          <div class="h-0.5 w-20 bg-primary-500 my-4"></div>
+
+          <p class="text-zinc-500 text-xl">
+            Queremos ser la cafetería de referencia en nuestra comunidad,
+            destacándonos por nuestra dedicación al café de calidad y el
+            compromiso con la satisfacción de nuestros clientes, siempre
+            innovando y creciendo con ellos.
+          </p>
+        </div>
+      </div>
+
+      <img
+        src="/about-us.webp"
+        alt=""
+        class="w-full rounded-2xl my-auto mx-auto"
+      />
+    </div>
+  </div>
+</section>
