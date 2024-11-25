@@ -112,9 +112,10 @@ export const Testiomonials = () => {
                     duration: 0.3,
                     ease: "easeInOut",
                   }}
+                  loading="lazy"
                   src={`/avatars${testimony.avatar}`}
                   className="h-12 w-12 aspect-square object-cover rounded-full shadow"
-                  alt=""
+                  alt={`Foto de ${testimony.name}`}
                 />
                 <motion.figcaption
                   initial={{
