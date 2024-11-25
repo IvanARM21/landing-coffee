@@ -77,6 +77,7 @@ export const GalleryGrid = () => {
             src={image.src}
             className="object-cover hover:scale-125 transition-all duration-500 w-full h-full"
             alt={image.alt}
+            loading="lazy"
             width="350"
             height="250"
           />

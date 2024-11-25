@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 import { Title } from "./ui/Title";
 import { Paragraph } from "./ui/Paragraph";
-import { formattCurrency } from "../utils";
 import { MenuList } from "./MenuList";
 
 const allDrinks = await getCollection("drinks");
@@ -11,8 +10,8 @@ const drinksData = allDrinks.map((drink) => drink.data);
 
 <section class="py-14 md:py-28" id="menu">
   <div class="container">
-    <Title client:load>Nuestro Menú</Title>
-    <Paragraph client:load
+    <Title client:visible>Nuestro Menú</Title>
+    <Paragraph client:visible
       >Explora nuestro menú y disfruta de una selección de bebidas deliciosas y
       frescas. ¡Siempre algo para todos!</Paragraph
     >

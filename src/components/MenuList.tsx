@@ -1,6 +1,7 @@
 import type { InferEntrySchema } from "astro:content";
 import { formattCurrency } from "../utils";
 import { motion } from "framer-motion";
+import { Image } from "astro:assets";
 
 type DrinkSchema = InferEntrySchema<"drink">;
 
@@ -13,6 +14,7 @@ export const MenuList = ({ drinks }: Props) => {
     <ul className="grid md:grid-cols-2 lg:grid-cols-3 mt-20 gap-y-20 gap-x-10">
       {drinks.map((drink, drinkIndex) => (
         <motion.li
+          key={drink.image}
           initial={{
             opacity: 0,
           }}
@@ -49,6 +51,9 @@ export const MenuList = ({ drinks }: Props) => {
             <motion.img
               alt={`Imagen bebida ${drink.title}`}
               src={drink.image}
+              loading="lazy"
+              width={208}
+              height={208}
               className="w-40 md:w-52 mx-auto aspect-square -mt-20 md:scale-110 group-hover:scale-125 group-hover:-translate-y-10 transition duration-300"
             />
           </motion.div>

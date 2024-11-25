@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 export const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-
   return (
     <>
       <header
@@ -26,8 +25,11 @@ export const Header = () => {
                 duration: 0.5,
                 ease: "easeInOut",
               }}
+              loading="lazy"
               src="/logo.svg"
-              alt=""
+              alt="Logo Coffe Code"
+              width={64}
+              height={64}
               className="w-12 md:w-16 h-auto"
             />
           </a>
