@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <>
       <header
-        className="w-full h-20 md:h-28 fixed top-0 z-40 py-4 md:py-6"
+        className="w-full h-20 md:h-24 fixed top-0 z-40 flex justify-center"
         id="header-nav"
       >
         <div className="container flex items-center justify-between">
@@ -50,37 +50,37 @@ export const Header = () => {
           >
             <a
               href="#servicios"
-              className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className="text-zinc-50 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Servicios
             </a>
             <a
               href="#menu"
-              className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className="text-zinc-50 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Menú
             </a>
             <a
               href="#testimonios"
-              className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className="text-zinc-50 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Testimonios
             </a>
             <a
               href="#galeria"
-              className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className="text-zinc-50 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Galería
             </a>
             <a
               href="#sobre-nosotros"
-              className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className="text-zinc-50 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Sobre nosotros
             </a>
             <a
               href="#contacto"
-              className="text-zinc-200 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className="text-zinc-50 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Contacto
             </a>

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 export const Hero = () => {
   return (
-    <section className="relative h-screen w-full">
+    <section className="relative h-[95vh] w-full">
       <motion.div
         initial={{
           opacity: 0,
@@ -27,7 +27,7 @@ export const Hero = () => {
           opacity: 0,
         }}
         whileInView={{
-          opacity: 1,
+          opacity: 0.5,
         }}
         viewport={{
           once: true,
@@ -36,7 +36,7 @@ export const Hero = () => {
           duration: 0.3,
           ease: "easeInOut",
         }}
-        className="bg-[url(/bg-coffee.webp)] bg-right bg-no-repeat bg-cover inset-0 absolute -z-20 blur-2xl opacity-70"
+        className="bg-[url(/bg-coffee.webp)] bg-right bg-no-repeat bg-cover inset-0 absolute -z-20 blur-2xl"
       ></motion.div>
       <div className="container text-center md:text-left flex flex-col gap-4 items-center md:items-start justify-center h-full">
         <motion.h1
