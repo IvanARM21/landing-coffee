@@ -1,4 +1,5 @@
 ---
+import { MissionAndVission } from "./MissionAndVission";
 import { Paragraph } from "./ui/Paragraph";
 import { Title } from "./ui/Title";
 ---
@@ -13,37 +14,7 @@ import { Title } from "./ui/Title";
     </Paragraph>
 
     <div class="grid lg:grid-cols-2 mt-10 gap-10 lg:gap-20">
-      <div class="flex flex-col gap-8">
-        <div class="border-b-2 pb-8">
-          <h3 class="text-2xl font-heading text-primary-600">Nuestra Misión</h3>
-          <div class="h-0.5 w-20 bg-primary-500 my-4"></div>
-          <p class="text-zinc-500 text-xl">
-            Nuestra misión es ofrecer a cada cliente una experiencia excepcional
-            a través de cafés de alta calidad, un ambiente acogedor y un
-            servicio cercano, creando momentos únicos que inspiren y conecten.
-          </p>
-        </div>
-        <div>
-          <h3 class="text-2xl font-heading text-primary-600">Nuestra Visión</h3>
-          <div class="h-0.5 w-20 bg-primary-500 my-4"></div>
-
-          <p class="text-zinc-500 text-xl">
-            Queremos ser la cafetería de referencia en nuestra comunidad,
-            destacándonos por nuestra dedicación al café de calidad y el
-            compromiso con la satisfacción de nuestros clientes, siempre
-            innovando y creciendo con ellos.
-          </p>
-        </div>
-      </div>
-
-      <img
-        src="/about-us.webp"
-        alt="Imagen Sobre Nosotros"
-        width="600"
-        height="320"
-        loading="lazy"
-        class="w-full rounded-2xl my-auto mx-auto"
-      />
+      <MissionAndVission client:visible />
     </div>
   </div>
 </section>

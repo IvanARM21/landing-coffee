@@ -54,7 +54,7 @@ export const MenuList = ({ drinks }: Props) => {
               loading="lazy"
               width={208}
               height={208}
-              className="w-40 md:w-52 mx-auto aspect-square -mt-20 md:scale-110 group-hover:scale-125 group-hover:-translate-y-10 transition duration-300"
+              className="h-40 md:h-52 mx-auto -mt-20 md:scale-110 group-hover:scale-125 group-hover:-translate-y-10 transition duration-300"
             />
           </motion.div>
 
@@ -75,8 +75,7 @@ export const MenuList = ({ drinks }: Props) => {
               }}
               transition={{
                 ease: "easeInOut",
-                duration: 0.3,
-                delay: 0.1 * drinkIndex,
+                duration: 0.5,
               }}
               className="text-2xl font-semibold text-primary-700"
             >
@@ -97,7 +96,6 @@ export const MenuList = ({ drinks }: Props) => {
               transition={{
                 ease: "easeInOut",
                 duration: 1,
-                delay: 0.1 * drinkIndex,
               }}
               className="h-0.5 w-20 bg-primary-600 my-4"
             />
@@ -115,8 +113,7 @@ export const MenuList = ({ drinks }: Props) => {
               }}
               transition={{
                 ease: "easeInOut",
-                duration: 0.3,
-                delay: 0.2 * drinkIndex,
+                duration: 0.5,
               }}
               className="text-zinc-600 text-sm italic"
             >

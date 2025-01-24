@@ -57,10 +57,12 @@ const { title } = Astro.props;
 
   @keyframes blur {
     from {
+      color: #fafafa;
     }
     to {
-      background: rgb(24 24 27 / 0.4);
+      background: transparent;
       backdrop-filter: blur(10px);
+      color: #27272a;
     }
   }
 </style>

@@ -50,37 +50,37 @@ export const Header = () => {
           >
             <a
               href="#servicios"
-              className="text-zinc-50 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className=" hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Servicios
             </a>
             <a
               href="#menu"
-              className="text-zinc-50 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className=" hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Menú
             </a>
             <a
               href="#testimonios"
-              className="text-zinc-50 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className=" hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Testimonios
             </a>
             <a
               href="#galeria"
-              className="text-zinc-50 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className=" hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Galería
             </a>
             <a
               href="#sobre-nosotros"
-              className="text-zinc-50 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className=" hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Sobre nosotros
             </a>
             <a
               href="#contacto"
-              className="text-zinc-50 hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
+              className=" hover:text-primary-600 transition-colors duration-300 text-lg font-medium"
             >
               Contacto
             </a>
@@ -93,7 +93,7 @@ export const Header = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <div
                 className={twMerge(
-                  "-translate-y-1 w-6 h-0.5 bg-white  transition-all duration-500",
+                  "-translate-y-1 w-6 h-0.5 bg-zinc-400  transition-all duration-500",
                   showMenu && "translate-y-0 rotate-45"
                 )}
               ></div>
@@ -101,7 +101,7 @@ export const Header = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <div
                 className={twMerge(
-                  "translate-y-1 w-6 h-0.5 bg-white transition-all duration-500",
+                  "translate-y-1 w-6 h-0.5 bg-zinc-400 transition-all duration-500",
                   showMenu && "translate-y-0 -rotate-45"
                 )}
               ></div>

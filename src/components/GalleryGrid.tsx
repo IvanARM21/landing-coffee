@@ -67,7 +67,7 @@ export const GalleryGrid = () => {
           }}
           key={index}
           className={twMerge(
-            "overflow-hidden rounded-2xl shadow-md",
+            "",
             image.colSpan === "5" && "md:col-span-5",
             image.colSpan === "7" && "md:col-span-7",
             image.colSpan === "6" && "md:col-span-6"
@@ -75,7 +75,7 @@ export const GalleryGrid = () => {
         >
           <img
             src={image.src}
-            className="object-cover hover:scale-125 transition-all duration-500 w-full h-full"
+            className="object-cover hover:scale-105 rounded-2xl shadow-md transition-all duration-500 w-full h-full"
             alt={image.alt}
             loading="lazy"
             width="350"
