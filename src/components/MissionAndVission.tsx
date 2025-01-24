@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export const MissionAndVission = () => {
   return (
     <>
-      <div class="flex flex-col gap-8">
+      <div className="flex flex-col gap-8">
         <motion.div
           whileInView={{ x: 0, opacity: 1 }}
           initial={{ x: -100, opacity: 0 }}
