@@ -1,7 +1,6 @@
 import type { InferEntrySchema } from "astro:content";
 import { formattCurrency } from "../utils";
 import { motion } from "framer-motion";
-import { Image } from "astro:assets";
 
 type DrinkSchema = InferEntrySchema<"drink">;
 

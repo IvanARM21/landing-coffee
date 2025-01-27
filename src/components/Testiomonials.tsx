@@ -14,7 +14,7 @@ export const Testiomonials = () => {
         </Paragraph>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
-          {testimonials.map((testimony, testiomonyIndex) => (
+          {testimonials.map((testimony) => (
             <figure className="flex justify-between flex-col gap-4 bg-white p-6 rounded-2xl shadow-md">
               <div className="flex gap-2">
                 {Array.from({ length: testimony.qualification }).map(
