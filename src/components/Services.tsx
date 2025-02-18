@@ -132,7 +132,6 @@ export const Services = () => {
                   transition={{
                     duration: 0.5,
                     ease: "easeInOut",
-                    delay: 0.1 * serviceIndex,
                   }}
                   className="bg-primary-600 p-2 w-14 h-14 rounded-full flex justify-center items-center mx-auto relative z-10"
                 >
@@ -151,7 +150,6 @@ export const Services = () => {
                   transition={{
                     duration: 0.3,
                     ease: "easeInOut",
-                    delay: 0.2 * serviceIndex,
                   }}
                   className="bg-primary-600/50 inset-0 rounded-full blur-xl absolute"
                 >
@@ -174,7 +172,6 @@ export const Services = () => {
                   transition={{
                     duration: 0.5,
                     ease: "easeInOut",
-                    delay: 0.3 * serviceIndex,
                   }}
                   className="text-xl text-primary-700 font-bold text-center overflow-hidden text-nowrap"
                 >
@@ -193,7 +190,6 @@ export const Services = () => {
                   transition={{
                     duration: 0.5,
                     ease: "easeInOut",
-                    delay: 0.3 * serviceIndex,
                   }}
                   className="h-0.5 w-20 bg-primary-500 mx-auto my-6"
                 ></motion.div>
@@ -212,7 +208,6 @@ export const Services = () => {
                   transition={{
                     duration: 0.5,
                     ease: "easeInOut",
-                    delay: 0.3 * serviceIndex,
                   }}
                   className="text-zinc-500 font-medium italic"
                 >

@@ -38,18 +38,20 @@ export const MissionAndVission = () => {
           </p>
         </motion.div>
       </div>
-      <div className="overflow-hidden">
-        <motion.img
-          whileInView={{ x: 0, opacity: 1 }}
-          initial={{ x: 100, opacity: 0 }}
-          transition={{ type: "spring", stiffness: 50, delay: 0.3 }}
-          src="/about-us.webp"
-          alt="Imagen Sobre Nosotros"
-          width="600"
-          height="320"
-          loading="lazy"
-          className="w-full rounded-2xl my-auto mx-auto"
-        />
+      <div className="relative sm:h-48 md:h-[420px] lg:h-[300px] xl:h-[360px] w-full">
+        <div className="overflow-hidden">
+          <motion.img
+            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ x: 100, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 50, delay: 0.3 }}
+            src="/about-us.webp"
+            alt="Imagen Sobre Nosotros"
+            width="600"
+            height="320"
+            loading="lazy"
+            className="w-full rounded-2xl my-auto mx-auto"
+          />
+        </div>
       </div>
     </>
   );

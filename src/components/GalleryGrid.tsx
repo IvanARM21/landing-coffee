@@ -63,7 +63,6 @@ export const GalleryGrid = () => {
           transition={{
             duration: 0.3,
             ease: "easeInOut",
-            delay: 0.1 * index,
           }}
           key={index}
           className={twMerge(
